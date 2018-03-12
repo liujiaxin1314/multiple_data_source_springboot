@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: multiple_data_source_springboot
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: cn.jxliu
+Build-Jdk: 1.7.0_45
+Built-By: Administrator
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://projects.spring.io/spring-boot/multiple_dat
+ a_source_springboot/
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxliu.oracle.CompanyMapper">
+	<resultMap id="BaseResultMap" type="cn.jxliu.model.Company">
+		<result column="COMPID" property="compid" jdbcType="VARCHAR" />
+		<result column="COMPNAME" property="compname" jdbcType="VARCHAR" />
+		<result column="PERMITWORD" property="permitword" jdbcType="VARCHAR" />
+	</resultMap>
+
+	
+	<select id="queryCompany" resultMap="BaseResultMap"
+		parameterType="string">
+		SELECT * from COMPANY where COMPID = #{compid, jdbcType=VARCHAR}
+	</select>
+
+</mapper>

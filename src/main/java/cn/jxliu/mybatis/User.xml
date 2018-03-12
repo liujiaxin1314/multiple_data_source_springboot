@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.jxliu.dao.UserMapper">
+	<resultMap id="BaseResultMap" type="cn.jxliu.model.User">
+		<result column="user_id" property="user_id" jdbcType="BIGINT" />
+		<result column="user_code" property="user_code" jdbcType="VARCHAR" />
+		<result column="user_name" property="user_name" jdbcType="BIGINT" />
+		<result column="user_password" property="user_password" jdbcType="BIGINT" />
+		<result column="user_state" property="user_state" jdbcType="BIGINT" />
+	</resultMap>
+
+	
+	<select id="queryUser" resultMap="BaseResultMap"
+		parameterType="int">
+		SELECT * from sys_user where user_id = #{user_id}
+	</select>
+
+</mapper>
